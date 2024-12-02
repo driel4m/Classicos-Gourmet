@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+:root {
+    --color-orange: #D85831;
+    --color-white: #fff;
+    --color-black: #000000;
+    --color-bege: #dbc3a7;
+}
+
+.title {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 26px;
+    color: var(--color-orange);
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-orange);
+    clip-path: circle(50% at bottom right);
+}
+
+.linhaDoTempo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.borda-sobre {
+    border-left: solid 3px var(--color-orange);
+    display: flex;
+    width: 460px;
+    height: 460px;
+    padding: 1rem;
+}
+
+.linhaDoTempoImagem {
+    width: 460px;
+    height: 460px;
+    border-right: solid 3px var(--color-orange);
+    padding: 1rem;
+}
+
+.paodemel {
+    position: relative;
+    width: 100%; 
+    height: auto; 
+    z-index: 1000;
+    padding: 2.2rem;
+}
+
+.fade-in {
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 1s ease, transform 1s ease; 
+}
+
+.fade-in.visible {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+p {
+    padding: 3.4rem;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 22px;
+    }
+
+    .linhaDoTempo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .borda-sobre,
+    .linhaDoTempoImagem {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .borda-sobre {
+        margin-bottom: 1rem;
+    }
+
+    .paodemel {
+        display: none;
+        padding: 0;
+    }
+
+    p {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 20px;
+        margin-top: 100px;
+    }
+
+    .borda-sobre {
+        padding: 0.5rem;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}

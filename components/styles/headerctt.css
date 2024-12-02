@@ -1,0 +1,158 @@
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header .logo{
+    position: relative;
+    max-width: 150px;
+}
+
+header .navegation ul {
+    position: relative;
+    display: flex;
+}
+
+header .navegation li {
+    list-style: none;
+}
+
+header .navegation li a {
+    display: inline-block;
+    color: var(--color-black);
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 19px;
+    margin-left: 100px;
+}
+
+header .navegation li a:hover {
+    color: var(--color-orange);
+    transform: translateY(-5px);
+    transition: 0.8s all;
+    border-radius: 15px;
+}
+
+header .navegation .dropdown {
+    position: relative;
+}
+
+header .navegation .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+header .navegation .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 250px;
+    z-index: 1;
+}
+
+header .navegation .dropdown-menu li {
+    padding: 3px;
+    text-align: left;
+}
+
+header .navegation .dropdown-menu li a {
+    display: block;
+    padding: 8px 16px;
+    color: var(--color-black);
+    font-size: 16px;
+    text-decoration: none;
+}
+
+header .navegation .dropdown-menu li a:hover {
+    background-color: var(--color-orange);
+    color: white;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: var(--color-black);
+    margin: 3px 0;
+}
+
+.navegation {
+    display: flex;
+}
+
+.navegation ul {
+    display: flex;
+    list-style: none;
+}
+
+.navegation ul li {
+    margin: 0 15px;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .navegation {
+        display: none;
+        width: 100%;
+        background-color: var(--color-orange);
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        z-index: 1;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .navegation {
+        display: none;
+        border: 3px;
+        border-radius: 14px;
+        background-color: var(--color-orange);
+        color: var(--color-white);
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        z-index: 1;
+        margin-top: 50px;
+    }
+
+    a{
+        margin: 10px;
+    }
+
+    header .navegation ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .navegation .dropdown-menu {
+        transform: translateY(-160px);
+        right: 50px;
+        position: relative;
+    }
+
+    header .navegation li a {
+        color: var(--color-white);
+    }
+
+    header .navegation .dropdown-menu li a {
+        color: var(--color-white);
+    }
+}
+
+
