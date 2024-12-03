@@ -121,7 +121,7 @@ header .navegation .dropdown-menu li a:hover {
         color: var(--color-white);
         position: absolute;
         top: 60px; 
-        left: 18rem;
+        left: 28.5rem;
         z-index: 1;
         margin-top: 50px;
         transition: 0.8s all;
@@ -157,57 +157,7 @@ header .navegation .dropdown-menu li a:hover {
     }
 }
 
-@media (max-width: 476px) {
-    .menu-toggle {
-        display: flex;
-    }
-
-    .navegation {
-        display: none;
-        width: 30%;
-        border: 3px;
-        border-radius: 15px;
-        background-color: var(--color-orange);
-        color: var(--color-white);
-        position: absolute;
-        top: 60px; 
-        left: 17.5rem;
-        z-index: 1;
-        margin-top: 50px;
-        transition: 0.8s all;
-    }
-
-    a{
-        margin: 10px;
-    }
-
-    header .navegation ul {
-        display: flex;
-        flex-direction: column;
-    }
-
-    header .navegation .dropdown-menu {
-        transform: translateY(-200px);
-        right: 50px;
-        position: relative;
-    }
-
-    header .navegation li a {
-        color: var(--color-white);
-        border-bottom: 2px solid var(--color-white);
-        margin: 1rem;
-    }
-
-    header .navegation .dropdown-menu li a {
-        color: var(--color-white);
-    }
-
-    .navegation ul li {
-        margin: 0;
-    }
-}
-
-@media (max-width: 380px) {
+@media (max-width: 570px) {
     .menu-toggle {
         display: flex;
     }
