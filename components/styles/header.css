@@ -164,7 +164,7 @@ header .navegation .dropdown-menu li a:hover {
 
     .navegation {
         display: none;
-        width: 30%;
+        width: 45%;
         border: 3px;
         border-radius: 15px;
         background-color: var(--color-orange);
