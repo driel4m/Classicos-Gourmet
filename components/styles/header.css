@@ -121,7 +121,7 @@ header .navegation .dropdown-menu li a:hover {
         color: var(--color-white);
         position: absolute;
         top: 60px; 
-        left: 18.9rem;
+        left: 17.5rem;
         z-index: 1;
         margin-top: 50px;
         transition: 0.8s all;
